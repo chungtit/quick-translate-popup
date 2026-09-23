@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Translate Selection to Vietnamese",
-  "version": "2.0",
-  "description": "Select text, press the shortcut, see the Vietnamese translation in a popup next to it.",
-  "permissions": ["activeTab", "scripting"],
+  "name": "Translate Selection",
+  "version": "2.1",
+  "description": "Select text, press the shortcut, see the translation in a popup next to it. Pick the target language right in the popup.",
+  "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["https://translate.googleapis.com/*"],
   "background": { "service_worker": "background.js" },
   "commands": {
     "translate-selection": {
       "suggested_key": { "default": "Ctrl+Shift+V", "mac": "Command+Shift+V" },
-      "description": "Translate selected text to Vietnamese"
+      "description": "Translate selected text"
     }
   }
 }
