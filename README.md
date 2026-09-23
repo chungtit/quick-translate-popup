@@ -61,7 +61,3 @@ After editing, go to `chrome://extensions` and click the **reload** (↻) icon o
 
 Either edit `suggested_key` in `manifest.json` and reload, or set it in the browser at `chrome://extensions/shortcuts` (the browser setting overrides the manifest).
 
-## Notes
-
-- Translation uses Google Translate's unofficial `gtx` endpoint. It's free and works well for personal use, but Google may rate-limit or change it without notice.
-- Permissions are minimal: `activeTab` and `scripting` (to read the selection and draw the popup on the current tab only when you press the shortcut) plus network access to `translate.googleapis.com`.
